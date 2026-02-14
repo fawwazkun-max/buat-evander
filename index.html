@@ -1,1 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Evander Ziannando 🤍</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<style>
 
+:root{
+  --maroon:#7a1f3d;
+  --pink:#ffd6e7;
+  --cream:#fff6ec;
+  --soft:#fce4ec;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,var(--cream),var(--pink));
+  color:#4a2c2a;
+  overflow-x:hidden;
+}
+
+section{
+  min-height:100vh;
+  padding:80px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s ease;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+h1,h2{
+  font-family:'Playfair Display',serif;
+  color:var(--maroon);
+  margin-bottom:20px;
+}
+
+p{
+  max-width:700px;
+  line-height:1.9;
+  margin-bottom:20px;
+}
+
+button{
+  background:var(--maroon);
+  color:white;
+  border:none;
+  padding:12px 28px;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+  font-size:14px;
+}
+
+button:hover{
+  background:#5e162f;
+  transform:scale(1.05);
+}
+
+.card{
+  background:white;
+  padding:25px;
+  margin:15px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  transition:0.4s;
+  max-width:600px;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.hidden{
+  display:none;
+}
+
+.heart{
+  font-size:35px;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+footer{
+  padding:40px;
+  text-align:center;
+  font-size:13px;
+  opacity:0.6;
+}
+
+.fade-in{
+  animation:fade 2s ease forwards;
+}
+
+@keyframes fade{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+</style>
+</head>
+<body>
+
+<!-- Opening -->
+<section class="show">
+  <h1>Untuk Evander Ziannando 🤍</h1>
+  <p>
+    Halooo~ Happy Valentine’s Day, sayangkuuu 🤍  
+    Sebelum lanjut… aku cuma mau bilang,  
+    ini bukan cuma website.  
+    Ini ruang kecil yang aku buat khusus buat kamu.
+  </p>
+  <button onclick="scrollToNext()">Masuk Yuk ✨</button>
+</section>
+
+<!-- Awal Cerita -->
+<section>
+  <h2>Dari Mabar Jadi Baper 😤❤️</h2>
+  <p>
+    Siapa sih yang nyangka kita bisa sejauh ini cuma gara-gara mabar?  
+    Dari yang awalnya saling ejek pas kalah,  
+    sampai akhirnya jadi,  
+    <i>"kamu jangan mabar sama cewek lain yaaaa!"</i> 😤  
+  </p>
+  <p>
+    Lucu banget kalau diingat.  
+    Tapi juga manis banget.  
+    Dari game… jadi sayang beneran.
+  </p>
+</section>
+
+<!-- Malam Spesial -->
+<section>
+  <h2>Malam Tahun Baru Itu 💝</h2>
+  <p>
+    Di saat orang-orang fokus lihat kembang api, hangout sama temen-temennya…  
+    aku malah dapet hadiah paling berharga: <b>kamu</b>.
+  </p>
+  <p>
+    Sejak kita resmi pacaran malam itu,  
+    rasanya setiap hari jadi beda.  
+    Ada kamu yang aku tunggu chat-nya.  
+    Tunggu teleponnya.  
+    Tunggu ngajakin mabar lagi.
+  </p>
+</section>
+
+<!-- LDR -->
+<section>
+  <h2>Rumah yang Lewat Layar 🤍</h2>
+  <div class="card">Walaupun LDR, kamu selalu ada tiap hari.</div>
+  <div class="card">Selalu nyempetin waktu buat aku (walaupun sering ninggalin aku juga 😒).</div>
+  <div class="card">Dengerin cerita random aku walaupun kadang malah diejek 😠.</div>
+  <div class="card">Nemenin sampai ketiduran… bahkan cuma denger napas kamu aja udah bikin tenang.</div>
+  <p>
+    Kamu itu aku anggap rumah.  
+    Walaupun rumahnya masih lewat layar. Hihii 😵
+  </p>
+</section>
+
+<!-- Rindu -->
+<section>
+  <h2>Rindu yang Ditahan 🤍</h2>
+  <p>
+    Jujur… aku sering banget kangen.  
+    Pengen peluk kamu langsung.  
+    Bukan cuma kirim emoji peluk.
+  </p>
+  <p>
+    Tapi aku tahan.  
+    Karena aku percaya semua rindu ini bakal kebayar  
+    disaat suatu hari nanti kalau kita ketemu.
+  </p>
+</section>
+
+<!-- Surprise Trigger -->
+<section>
+  <h2>Ada Satu Hal Lagi...</h2>
+  <p>Kalau kamu sudah sampai sini, berarti kamu benar-benar baca semuanya 🤍</p>
+  <button onclick="revealSurprise()">Klik Ini, Sayang 🎁</button>
+
+  <div id="surprise" class="hidden fade-in">
+    <p class="heart">❤️</p>
+    <p>
+      Makasih ya sudah sabar sama aku.  
+      Makasih sudah setia, sudah bertahan,  
+      dan sudah terus milih aku setiap hari.
+    </p>
+    <p>
+      Kamu bukan cuma partner mabar terbaik.  
+      Kamu cowok yang paling aku sayang dan aku banggakan 💗
+    </p>
+    <p>
+      Semoga hubungan kita makin kuat, makin dewasa,  
+      dari yang awalnya mabar terus jadi baper,  
+      dari layar jadi nyata,  
+      dari LDR sampai nanti nggak ada jarak lagi.
+    </p>
+    <h2>Aku sayang banget sama kamu 🤍</h2>
+    <p>
+      Jangan bosan sama aku ya 😤😡  
+      Valentine kali ini buat kamu…  
+      dan semoga seterusnya juga tetap kamu 💕
+    </p>
+    <br>
+    <p><b>with love,<br>ur beloved girl : tacaaa 💗</b></p>
+  </div>
+</section>
+
+<footer>
+Dibuat dengan penuh cinta, khusus untuk Evander Ziannando.
+</footer>
+
+<script>
+
+function scrollToNext(){
+  document.querySelectorAll("section")[1].scrollIntoView({behavior:"smooth"});
+}
+
+const sections=document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+  sections.forEach(section=>{
+    const rect=section.getBoundingClientRect();
+    if(rect.top<window.innerHeight-100){
+      section.classList.add("show");
+    }
+  });
+});
+
+function revealSurprise(){
+  document.getElementById("surprise").classList.remove("hidden");
+}
+
+</script>
+
+</body>
+</html>
